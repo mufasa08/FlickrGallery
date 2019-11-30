@@ -23,4 +23,5 @@ object AppMainNavigation : DynamicFeature<Intent> {
                 putExtra(TITLE_KEY, title)
                 putExtra(DATE_PUBLISHED_KEY, datePublished)
             }
+    
 }

@@ -3,4 +3,9 @@
     <string name="error">Error</string>
     <string name="retry">Retry</string>
 
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="tags">Tags</string>
+    <string name="published_date">Published Date</string>
 </resources>
