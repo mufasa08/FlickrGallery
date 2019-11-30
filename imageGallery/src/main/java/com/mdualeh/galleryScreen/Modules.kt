@@ -1,5 +1,7 @@
 package com.mdualeh.galleryScreen
 
+import com.mdualeh.galleryScreen.data.repository.GalleryItemRepositoryImpl
+import com.mdualeh.galleryScreen.domain.repository.GalleryItemRepository
 import com.mdualeh.homescreen.domain.usecase.GalleryItemUseCase
 import com.mdualeh.homescreen.presentation.homescreen.GalleryItemsViewModel
 import com.mdualeh.network.createNetworkClient
@@ -14,7 +16,8 @@ fun injectFeature() = loadFeature
 private val loadFeature by lazy {
     loadKoinModules(
         useCaseModule,
-        viewModelModule
+        viewModelModule,
+        repositoryModule
     )
 }
 
@@ -28,4 +31,13 @@ val useCaseModule: Module = module {
 
 val viewModelModule: Module = module {
     viewModel { GalleryItemsViewModel(galleryItemUseCase = get()) }
+}
+
+val repositoryModule: Module = module {
+    single {
+        GalleryItemRepositoryImpl(
+            cacheDataSource = get(),
+            remoteDataSource = get()
+        ) as GalleryItemRepository
+    }
 }
