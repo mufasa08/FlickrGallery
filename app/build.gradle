@@ -22,6 +22,7 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
+    dynamicFeatures = [Modules.imageGallery]
 }
 
 dependencies {

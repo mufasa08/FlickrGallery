@@ -8,6 +8,7 @@ object Modules {
     val cache = ":common:cache"
     val network = ":common:network"
     val presentation = ":common:presentation"
+    val imageGallery = ":imageGallery"
 }
 
 object Releases {
