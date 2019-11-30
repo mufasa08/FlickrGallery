@@ -7,17 +7,13 @@
     android:layout_height="match_parent"
     android:animateLayoutChanges="true">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/galleriesRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/color_white"
-        app:spanCount="2"
+        app:spanCount="4"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         tools:listitem="@layout/gallery_list_sale_item" />
 

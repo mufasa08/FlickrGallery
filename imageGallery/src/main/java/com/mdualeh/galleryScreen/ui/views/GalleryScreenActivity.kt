@@ -18,7 +18,7 @@ import org.koin.androidx.viewmodel.ext.viewModel
 class GalleryScreenActivity : AppCompatActivity() {
 
     private val vm: GalleryItemsViewModel by viewModel()
-    private val adapter = GalleryItemListAdapter()
+    private val adapter by lazy { GalleryItemListAdapter() }
     private val snackBar by lazy {
         Snackbar.make(swipeRefreshLayout, getString(R.string.error), Snackbar.LENGTH_INDEFINITE)
             .setAction(getString(R.string.retry)) { vm.get(refresh = true) }
@@ -29,7 +29,7 @@ class GalleryScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_gallery)
         injectFeature()
         if (savedInstanceState == null) {
-            vm.get(false)
+            vm.get(true)
         }
         vm.galleryItems.observe(this, Observer { updateSaleItems(it) })
         galleriesRecyclerView.adapter = adapter

@@ -29,4 +29,5 @@ dependencies {
     testImplementation TestLibraries.mockitoKotlin
     testImplementation TestLibraries.mockitoInline
     testImplementation TestLibraries.lifecycleTesting
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }

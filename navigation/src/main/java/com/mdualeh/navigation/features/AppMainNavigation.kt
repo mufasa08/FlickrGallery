@@ -6,7 +6,7 @@ import com.mdualeh.navigation.loadIntentOrNull
 object AppMainNavigation : DynamicFeature<Intent> {
 
     private const val DYNAMICSCREEN =
-        "com.mdualeh.galleryScreen.presentation.galleryScreen.GalleryScreenActivity"
+        "com.mdualeh.galleryScreen.ui.views.GalleryScreenActivity"
 
     override val dynamicStart: Intent?
         get() = DYNAMICSCREEN.loadIntentOrNull()

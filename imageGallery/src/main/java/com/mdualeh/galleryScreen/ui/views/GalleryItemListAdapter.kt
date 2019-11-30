@@ -24,8 +24,8 @@ class GalleryItemListAdapter :
 
         fun bind(item: GalleryListItem) {
             itemView.itemImage.loadImage(item.itemImageUrl)
-            itemView.author.text = item.author
-            itemView.title.text = item.description
+            // itemView.author.text = item.author
+            // itemView.title.text = item.description
         }
     }
 }
