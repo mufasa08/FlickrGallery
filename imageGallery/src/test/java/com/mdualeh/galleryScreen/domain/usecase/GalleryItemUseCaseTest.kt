@@ -4,7 +4,6 @@ package com.mdualeh.galleryScreen.domain.usecase
 
 import com.mdualeh.galleryScreen.domain.repository.GalleryItemRepository
 import com.mdualeh.galleryScreen.galleryItem
-import com.mdualeh.homescreen.domain.usecase.GalleryItemUseCase
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever

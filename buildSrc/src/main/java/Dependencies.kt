@@ -1,5 +1,5 @@
 object ApplicationId {
-    val id = "com.mdualeh.boilerPlate"
+    val id = "com.mdualeh.flickrApp"
 }
 
 object Modules {

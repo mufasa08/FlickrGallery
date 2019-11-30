@@ -1,4 +1,4 @@
-package com.mdualeh.homescreen.domain.usecase
+package com.mdualeh.galleryScreen.domain.usecase
 
 import com.mdualeh.galleryScreen.domain.model.GalleryItem
 import com.mdualeh.galleryScreen.domain.repository.GalleryItemRepository

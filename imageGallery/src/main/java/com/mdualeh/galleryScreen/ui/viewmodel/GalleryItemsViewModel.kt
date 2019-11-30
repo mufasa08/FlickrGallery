@@ -1,10 +1,10 @@
-package com.mdualeh.homescreen.presentation.homescreen
+package com.mdualeh.galleryScreen.ui.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.mdualeh.galleryScreen.domain.usecase.GalleryItemUseCase
 import com.mdualeh.galleryScreen.ui.model.GalleryListItem
 import com.mdualeh.galleryScreen.ui.model.mapToUIModel
-import com.mdualeh.homescreen.domain.usecase.GalleryItemUseCase
 import com.mdualeh.presentation.Resource
 import com.mdualeh.presentation.setError
 import com.mdualeh.presentation.setLoading

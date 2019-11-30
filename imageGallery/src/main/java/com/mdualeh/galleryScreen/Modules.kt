@@ -9,8 +9,8 @@ import com.mdualeh.galleryScreen.datasource.model.GalleryItemEntity
 import com.mdualeh.galleryScreen.datasource.remote.GalleryItemApi
 import com.mdualeh.galleryScreen.datasource.remote.GalleryItemRemoteDataSourceImpl
 import com.mdualeh.galleryScreen.domain.repository.GalleryItemRepository
-import com.mdualeh.homescreen.domain.usecase.GalleryItemUseCase
-import com.mdualeh.homescreen.presentation.homescreen.GalleryItemsViewModel
+import com.mdualeh.galleryScreen.domain.usecase.GalleryItemUseCase
+import com.mdualeh.galleryScreen.ui.viewmodel.GalleryItemsViewModel
 import com.mdualeh.network.createNetworkClient
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.context.loadKoinModules

@@ -1,4 +1,4 @@
-package com.mdualeh.cleanArchitectureBoilerPlate
+package com.mdualeh.flickrApp
 
 import android.app.Application
 import com.mdualeh.cache.CacheLibrary

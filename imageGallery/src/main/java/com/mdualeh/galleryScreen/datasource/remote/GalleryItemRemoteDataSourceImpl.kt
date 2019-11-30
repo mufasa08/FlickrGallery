@@ -11,5 +11,5 @@ class GalleryItemRemoteDataSourceImpl constructor(
 
     override fun get(): Single<List<GalleryItem>> =
         api.getGalleryItems("json")
-            .map { it.mapToDomain() }
+            .map { it.items.mapToDomain() }
 }

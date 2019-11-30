@@ -1,4 +1,4 @@
-package com.mdualeh.cleanArchitectureBoilerPlate
+package com.mdualeh.flickrApp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

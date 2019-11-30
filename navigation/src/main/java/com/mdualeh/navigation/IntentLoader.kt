@@ -2,7 +2,7 @@ package com.mdualeh.navigation
 
 import android.content.Intent
 
-private const val PACKAGE_NAME = "com.mdualeh.boilerPlate"
+private const val PACKAGE_NAME = "com.mdualeh.flickrApp"
 
 private fun intentTo(className: String): Intent =
     Intent(Intent.ACTION_VIEW).setClassName(PACKAGE_NAME, className)
