@@ -1,4 +1,4 @@
-package com.mdualeh.galleryScreen.presentation.galleryScreen
+package com.mdualeh.galleryScreen.ui.galleryScreen
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

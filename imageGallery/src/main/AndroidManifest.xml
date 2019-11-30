@@ -11,6 +11,6 @@
     </dist:module>
 
     <application tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.mdualeh.galleryScreen.presentation.galleryScreen.GalleryScreenActivity" />
+        <activity android:name="com.mdualeh.galleryScreen.ui.galleryScreen.GalleryScreenActivity" />
     </application>
 </manifest>

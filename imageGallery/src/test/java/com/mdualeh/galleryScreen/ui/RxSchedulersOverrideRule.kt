@@ -1,4 +1,4 @@
-package com.mdualeh.galleryScreen.presentation
+package com.mdualeh.galleryScreen.ui
 
 import io.reactivex.Scheduler
 import io.reactivex.functions.Function
