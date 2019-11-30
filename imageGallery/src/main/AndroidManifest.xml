@@ -12,5 +12,6 @@
 
     <application tools:ignore="GoogleAppIndexingWarning">
         <activity android:name="com.mdualeh.galleryScreen.ui.views.GalleryScreenActivity" />
+        <activity android:name="com.mdualeh.galleryScreen.ui.views.GalleryItemDetailsActivity" />
     </application>
 </manifest>

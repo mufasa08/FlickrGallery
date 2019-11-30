@@ -10,7 +10,7 @@ import com.mdualeh.presentation.inflate
 import com.mdualeh.presentation.loadImage
 import kotlinx.android.synthetic.main.gallery_list_sale_item.view.*
 
-class GalleryItemListAdapter :
+class GalleryItemListAdapter(private val itemClick: (GalleryListItem) -> Unit) :
     ListAdapter<GalleryListItem, GalleryItemListAdapter.ViewHolder>(GalleryItemDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
@@ -24,8 +24,7 @@ class GalleryItemListAdapter :
 
         fun bind(item: GalleryListItem) {
             itemView.itemImage.loadImage(item.itemImageUrl)
-            // itemView.author.text = item.author
-            // itemView.title.text = item.description
+            itemView.setOnClickListener { itemClick.invoke(item) }
         }
     }
 }

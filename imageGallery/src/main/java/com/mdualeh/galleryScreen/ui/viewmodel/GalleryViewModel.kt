@@ -12,7 +12,7 @@ import com.mdualeh.presentation.setSuccess
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 
-class GalleryItemsViewModel constructor(private val galleryItemUseCase: GalleryItemUseCase) :
+class GalleryViewModel constructor(private val galleryItemUseCase: GalleryItemUseCase) :
     ViewModel() {
     val galleryItems = MutableLiveData<Resource<List<GalleryListItem>>>()
     private val compositeDisposable = CompositeDisposable()
