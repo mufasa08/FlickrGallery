@@ -1,7 +1,9 @@
 package com.mdualeh.navigation.features
 
 import android.content.Intent
+import android.net.Uri
 import com.mdualeh.navigation.loadIntentOrNull
+
 
 object AppMainNavigation : DynamicFeature<Intent> {
 
@@ -23,5 +25,6 @@ object AppMainNavigation : DynamicFeature<Intent> {
                 putExtra(TITLE_KEY, title)
                 putExtra(DATE_PUBLISHED_KEY, datePublished)
             }
-    
+
+    fun browserIntent(url:String): Intent? = Intent(Intent.ACTION_VIEW, Uri.parse(url))
 }

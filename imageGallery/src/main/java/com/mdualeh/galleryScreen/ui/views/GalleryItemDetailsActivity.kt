@@ -44,6 +44,7 @@ class GalleryItemDetailsActivity : AppCompatActivity() {
                 resourceItem.data?.first { it.itemName == title && it.author == author && it.datePublished == datePublished }
             currentItem?.let { item ->
                 itemImage.loadImage(item.itemImageUrl)
+                itemImage.setOnClickListener { imageClick.invoke(item.itemUrl) }
                 itemInfo.text = item.itemName
                 authoredBy.text = item.author
                 tagsInfo.text = item.tags.joinToString(",")
@@ -51,6 +52,9 @@ class GalleryItemDetailsActivity : AppCompatActivity() {
             }
         }
     }
+
+    private val imageClick: (String) -> Unit =
+        { startActivity(AppMainNavigation.browserIntent(it)) }
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
