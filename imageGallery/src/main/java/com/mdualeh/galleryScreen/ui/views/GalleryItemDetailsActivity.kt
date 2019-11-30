@@ -46,15 +46,19 @@ class GalleryItemDetailsActivity : AppCompatActivity() {
                 itemImage.loadImage(item.itemImageUrl)
                 itemImage.setOnClickListener { imageClick.invoke(item.itemUrl) }
                 itemInfo.text = item.itemName
-                authoredBy.text = item.author
+                authoredBy.text = item.author.substringAfter('\"').substringBefore('\"')
                 tagsInfo.text = item.tags.joinToString(",")
                 published.text = item.datePublished.convertUTCToLocal()
+                fab.setOnClickListener { fabClick.invoke(item.itemUrl) }
             }
         }
     }
 
     private val imageClick: (String) -> Unit =
         { startActivity(AppMainNavigation.browserIntent(it)) }
+
+    private val fabClick: (String) -> Unit =
+        { startActivity(AppMainNavigation.emailIntent(it, currentItem?.itemName ?: "")) }
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()

@@ -4,7 +4,6 @@ import android.content.Intent
 import android.net.Uri
 import com.mdualeh.navigation.loadIntentOrNull
 
-
 object AppMainNavigation : DynamicFeature<Intent> {
 
     const val AUTHOR_KEY = "AUTHOR_KEY"
@@ -26,5 +25,13 @@ object AppMainNavigation : DynamicFeature<Intent> {
                 putExtra(DATE_PUBLISHED_KEY, datePublished)
             }
 
-    fun browserIntent(url:String): Intent? = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+    fun browserIntent(url: String): Intent? = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+
+    fun emailIntent(url: String, subject: String): Intent {
+        val emailIntent = Intent(Intent.ACTION_SEND)
+        emailIntent.setType("text/plain")
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject)
+        emailIntent.putExtra(Intent.EXTRA_TEXT, url)
+        return(Intent.createChooser(emailIntent, "Email:"))
+    }
 }
