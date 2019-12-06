@@ -1,4 +1,4 @@
-Currency Converter App   [![CircleCI](https://circleci.com/gh/mufasa08/CurrencyConvertor-Clean-Architecture-Sample/tree/master.svg?style=svg)](https://circleci.com/gh/mufasa08/CurrencyConvertor-Clean-Architecture-Sample/tree/master)
+Flickr App   [![CircleCI](https://circleci.com/gh/mufasa08/CurrencyConvertor-Clean-Architecture-Sample/tree/master.svg?style=svg)](https://circleci.com/gh/mufasa08/CurrencyConvertor-Clean-Architecture-Sample/tree/master)
 =
 
 
